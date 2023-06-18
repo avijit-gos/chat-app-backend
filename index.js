@@ -21,7 +21,7 @@ app.use(
   })
 );
 
-const port = 7000;
+const port = process.env.PORT || 7000;
 
 // public routes...
 app.use("/api", require("./server/routes/public/publicRoutes"));
